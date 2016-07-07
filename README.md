@@ -4,7 +4,7 @@
 - [Ctrl-P](https://github.com/ctrlpvim/ctrlp.vim.git)
 - [Jedi](https://github.com/davidhalter/jedi-vim.git)
 - [NERDTree](https://github.com/scrooloose/nerdtree.git)
-- [PYDoc](git@github.com:fs111/pydoc.vim.git)
+- [PYDoc] git@github.com:fs111/pydoc.vim.git
 - [Python-Mode](git://github.com/klen/python-mode.git)
 - [TagBar](git@github.com:majutsushi/tagbar.git)
 - [Vim-Airline](https://github.com/vim-airline/vim-airline)
@@ -29,4 +29,4 @@
 
 *Skripte*
 
-fromage
+- fromage | požen za editiranje
