@@ -1,0 +1,2 @@
+#!/bin/bash
+gvim74 $(find -name *.go -or -name *.py)
