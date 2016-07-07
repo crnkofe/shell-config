@@ -24,8 +24,8 @@
 
 *Aplikacije*
 
-[Task Warrior](https://taskwarrior.org/)
-[TMux](https://tmux.github.io/)
+- [Task Warrior](https://taskwarrior.org/)
+- [TMux](https://tmux.github.io/)
 
 *Skripte*
 
