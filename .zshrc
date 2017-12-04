@@ -49,11 +49,11 @@ ZSH_THEME="robbyrussell"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git taskwarrior)
+plugins=(git taskwarrior web-search chucknorris docker jsontools zsh-autosuggestions zsh-syntax-highlighting)
 
 # User configuration
 
-  export PATH="/home/simonm/bin:/usr/local/bin:/usr/bin:/bin:/usr/local/games:/usr/games:/home/simonm/go/go1.6/bin:/home/simonm/bin"
+ export PATH="/home/simonm/bin:/usr/local/bin:/usr/bin:/bin:/usr/local/games:/usr/games:/home/simonm/go/go1.6/bin:/home/simonm/bin"
 # export MANPATH="/usr/local/man:$MANPATH"
 
 source $ZSH/oh-my-zsh.sh
@@ -65,7 +65,7 @@ source $ZSH/oh-my-zsh.sh
 if [[ -n $SSH_CONNECTION ]]; then
    export EDITOR='vim'
 else
-   export EDITOR='gvim'
+   export EDITOR='vim'
 fi
 
 # Compilation flags
@@ -97,7 +97,7 @@ GIT_PROMPT_EXECUTABLE="haskell"
 PROMPT='%n@%m:%1/%# '
 RPROMPT='$(git_super_status)'
 
-ZSH_THEME="arrow"
+ZSH_THEME="agnoster"
 
 # -------------------------------------------------------------------
 # # Git aliases
@@ -132,3 +132,8 @@ export LANG=en_US.UTF-8
 export GOPATH=$HOME
 export GOROOT=$HOME/go/go1.6
 export PATH=$PATH:$GOROOT/bin                                 
+
+ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE="fg=blue"
+
+bindkey "^[[D" backward-word
+bindkey "^[[C" forward-word
