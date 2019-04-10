@@ -137,3 +137,20 @@ ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE="fg=blue"
 
 bindkey "^[[D" backward-word
 bindkey "^[[C" forward-word
+
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+
+# clipboard - pipeas sm not karkol te zanima
+ alias xclip="xclip -selection c"
+
+function grumpy() {
+    git remote update
+    git merge --ff upstream/$(git rev-parse --abbrev-ref HEAD)
+}
+
+function fcd() {
+    export name=$1
+    local FILE=$( find -name "$name*" | head -n1 2> /dev/null )
+    cd "$(dirname ${FILE})"
+}
+
