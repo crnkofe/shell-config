@@ -8,5 +8,5 @@ fi
 BASENAME=$(basename $PWD | cut -d'-' -f1-1)
 BRANCH=$(git branch | grep \* | cut -d '_' -f1-1 | cut -c3-)
 
-cat ~/git/dea-commit-template | sed 's/TASK/'"$BRANCH"'/' | sed 's/PROJECT/'"$BASENAME"'/' > ~/git/commit-template
-git commit -t ~/git/commit-template
+cat ~/git/commit-template | sed 's/TASK/'"$BRANCH"'/' | sed 's/PROJECT/'"$BASENAME"'/' > ~/git/parsed-commit-template
+git commit -t ~/git/parsed-commit-template
